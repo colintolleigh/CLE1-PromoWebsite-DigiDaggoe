@@ -1,0 +1,82 @@
+:root {
+    --primary-bg: #FFFFFF;
+    --secondary-bg: #E6F8B2;
+    --tertiary-bg: #CDE77F;
+    --primary-accent: #704E2E;
+    --secondary-accent: #eee3ab;
+
+    --transition-speed: 350ms;
+
+    --center-padding: 20px 20vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-accent);
+}
+
+body {
+    background-color: var(--primary-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: var(--tertiary-bg);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 20px;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+nav a:hover {
+    background-color: var(--primary-accent);
+    color: var(--secondary-bg);
+}
+
+.nav-left {
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--center-padding);
+
+    background-color: var(--primary-accent);
+}
+
+footer a,
+span {
+    color: var(--primary-bg);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
