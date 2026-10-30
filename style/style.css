@@ -14,6 +14,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -199,9 +200,15 @@ form {
 .form-row {
     display: flex;
     gap: 5px;
-
     width: var(--form-width);
 }
+
+.form-row div {
+    flex: 1;
+    min-width: 0;
+}
+
+
 
 div:has(> input, textarea) {
     display: flex;
@@ -219,4 +226,58 @@ div:has(> input[type=checkbox]) {
 
 input {
     padding: 5px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    .services-content {
+        flex-direction: column;
+        gap: 2vh;
+        padding: 5px;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .accent-button {
+        min-width: 100%;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 0;
+        justify-content: space-around;
+        height: 25vh;
+    }
+
+    .footer-right a {
+        text-decoration: underline;
+
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    div:has(> input, textarea) {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form {
+        padding: 0;
+    }
 }
