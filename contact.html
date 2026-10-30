@@ -22,7 +22,47 @@
     </nav>
 
     <main>
-        <p>contact pagina</p>
+        <header>
+            <div>
+                <h1>Meer weten?</h1>
+                <p>Heb je nou nog vragen? Stel lekker alle vragen die je nog heb, dan zullen wij deze vraag zo snel
+                    mogelijk opnemen, beoordelen, categoriseren, uitvogelen, reviseren, verifieren, controlleren, en
+                    beantwoorden! Waar wacht je nog op?</p>
+            </div>
+        </header>
+        <section class="form">
+            <form action="reply.html">
+                <h2>Form</h2>
+                <div class="form-row">
+                    <div>
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" id="voornaam" name="voornaam" placeholder="Jan">
+                    </div>
+                    <div>
+                        <label for="achternaam">Achternaam</label>
+                        <input type="text" id="achternaam" name="achternaam" placeholder="Smit">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="JanSmit@email.com">
+                </div>
+                <div>
+                    <label for="geboortedatum">Geboortedatum</label>
+                    <input type="date" id="geboortedatum" name="geboortedatum">
+                </div>
+                <div>
+                    <input type="checkbox" id="akkoord" name="akkoord">
+                    <label for="akkoord">Ik ga akkoord met de algemene Voorwaarden</label>
+                </div>
+                <div>
+                    <label for="inquiry">Stel hier uw vraag!</label>
+                    <textarea name="inquiry" id="inquiry" placeholder="Stel hier uw vraag"></textarea>
+                </div>
+                <button class="accent-button" type="submit" value="Submit">Verzenden</button>
+            </form>
+        </section>
     </main>
 
     <footer>
