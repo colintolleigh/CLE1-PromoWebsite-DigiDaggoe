@@ -7,7 +7,7 @@
 
     --transition-speed: 350ms;
 
-    --center-padding: 20px 20vw;
+    --center-padding: 20px 10vw;
 }
 
 * {
@@ -18,6 +18,8 @@
     font-family: Arial, Helvetica, sans-serif;
     color: var(--primary-accent);
 }
+
+
 
 body {
     background-color: var(--primary-bg);
@@ -32,6 +34,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -57,6 +62,99 @@ main {
     flex: 1;
 }
 
+header {
+    background-color: var(--secondary-bg);
+    padding: var(--center-padding);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3vh;
+}
+
+header div {
+    text-align: center;
+    padding: 2%;
+}
+
+.accent-button {
+    background-color: var(--primary-accent);
+    color: var(--primary-bg);
+
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.accent-button:hover {
+    background-color: var(--secondary-accent);
+    color: var(--primary-accent);
+}
+
+section {
+    padding: var(--center-padding);
+}
+
+.services-content {
+    display: flex;
+    gap: 2%;
+}
+
+.services-content div {
+    background-color: var(--secondary-bg);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.services-content img {
+    width: 100%;
+    height: 100px;
+
+    object-fit: cover;
+}
+
+.dog img,
+.customer-service img {
+    object-position: 0 0;
+}
+
+
+.about {
+    background-color: var(--secondary-bg);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about div {
+    display: flex;
+    gap: 20px;
+}
+
+.about div div {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about a {
+    max-width: 5rem;
+}
+
+.about img {
+    max-width: 30%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -79,4 +177,9 @@ footer a:hover {
 .footer-left {
     display: flex;
     flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
 }
