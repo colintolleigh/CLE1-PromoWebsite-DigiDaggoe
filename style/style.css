@@ -377,6 +377,10 @@ input {
     padding: 5px;
 }
 
+#userManual {
+    text-decoration: underline;
+}
+
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
